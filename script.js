@@ -97,8 +97,11 @@ function showHourly3(temp, icon) {
       // console.log(idx);
 
       hour3 = new Date(data.list[idx].dt_txt).getHours();
+      hour3 = hour3 < 10 ? "0" + hour3 : hour3;
       hour6 = new Date(data.list[idx + 1].dt_txt).getHours();
+      hour6 = hour6 < 10 ? "0" + hour6 : hour6;
       hour9 = new Date(data.list[idx + 2].dt_txt).getHours();
+      hour9 = hour9 < 10 ? "0" + hour9 : hour9;
 
       nextHour3.innerHTML = `${hour3}:00`;
       nextHour6.innerHTML = `${hour6}:00`;
