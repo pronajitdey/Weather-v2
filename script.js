@@ -90,11 +90,12 @@ function showHourly3(temp, icon) {
           idx++;
         }
       } else {
-        while (new Date(data.list[idx].dt_txt).getHours() <= hour) {
+        while (new Date(data.list[idx].dt_txt).getHours() <= hour || new Date(data.list[idx].dt_txt).getHours() > hour + 3) {
           idx++;
         }
       }
-      
+      // console.log(idx);
+
       hour3 = new Date(data.list[idx].dt_txt).getHours();
       hour6 = new Date(data.list[idx + 1].dt_txt).getHours();
       hour9 = new Date(data.list[idx + 2].dt_txt).getHours();
