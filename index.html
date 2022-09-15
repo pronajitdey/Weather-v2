@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather site</title>
+    <link rel="icon" href="images/weather.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="location">
+            <span><i class="fi fi-sr-marker"></i></span>
+            <span class="city-name">Siliguri</span>
+        </div>
+        <div class="main-info">
+            <img src="" alt="weather-icon" class="weather-icon">
+            <p class="curr-temp">21</p>
+            <p class="weather-condition">Thunderstorm</p>
+            <p class="date">Monday, 17 May</p>
+        </div>
+        <div class="other-info">
+            <div class="wind">
+                <img src="images/wind.png" alt="wind-img">
+                <p class="data wind-data"></p>
+                <p class="info">Wind</p>
+            </div>
+            <div class="rain">
+                <img src="images/humidity.png" alt="humidity-img">
+                <p class="data humidity-data"></p>
+                <p class="info">Humidity</p>
+            </div>
+            <div class="humidity">
+                <img src="images/barometer.png" alt="pressure-img">
+                <p class="data pressure-data"></p>
+                <p class="info">Pressure</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="today-section">
+        <div class="title">
+            <h3>Today</h3>
+            <a href="#">7 days ></a>
+        </div>
+        <div class="hourly-container">
+            <div class="hours curr">
+                <p class="curr-hour-temp deg">21</p>
+                <img src="" alt="" class="curr-icon">
+                <p class="time curr-time">11:00</p>
+            </div>
+            <div class="hours">
+                <p class="next-hour3-temp deg">23</p>
+                <img src="" alt="" class="next3-icon">
+                <p class="time next-hour3">10:00</p>
+            </div>
+            <div class="hours">
+                <p class="next-hour6-temp deg">22</p>
+                <img src="" alt="" class="next6-icon">
+                <p class="time next-hour6">12:00</p>
+            </div>
+            <div class="hours">
+                <p class="next-hour9-temp deg">19</p>
+                <img src="" alt="" class="next9-icon">
+                <p class="time next-hour9">01:00</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

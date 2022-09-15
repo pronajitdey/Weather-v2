@@ -1,0 +1,161 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;700&display=swap');
+
+:root {
+    --main-accent: linear-gradient(to bottom, hsl(199, 100%, 50%), hsl(205, 100%, 50%), hsl(212, 100%, 50%), hsl(220, 100%, 50%), hsl(237, 100%, 50%));
+    --dark: #010409;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0 0% 100% / 0.6);
+}
+
+img {
+    width: 35px;
+}
+
+.main-container {
+    background-image: var(--main-accent);
+    margin: 7px;
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.location {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.main-info {
+    margin: 20px 0;
+}
+
+img.weather-icon {
+    width: 200px;
+}
+
+.curr-temp {
+    font-size: 7rem;
+    font-weight: 700;
+    position: relative;
+    max-width: 322px;
+    margin: 0 auto;
+}
+
+.curr-temp::after, .deg::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 3px hsl(0 0% 100% / 0.5) solid;
+    top: 10px;
+    right: 74px;
+}
+
+.weather-condition {
+    font-size: 1.5rem;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.date, .data, .info, .today span, .time {
+    font-size: 0.75rem;
+}
+
+.date, .info, .today span, .time {
+    color: hsl(0 0% 100% / 0.6);
+}
+
+.other-info::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    display: block;
+    border-top: 1px hsl(0 0% 100% / 0.2) solid;
+    top: -10px;
+}
+
+.other-info {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.other-info div img {
+    width: 30px;
+}
+
+.today-section {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hourly-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hours {
+    border: 1px hsl(0 0% 100% / 0.5) solid;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    min-width: 55px;
+}
+
+.curr {
+    background: var(--main-accent);
+    min-width: 65px;
+    min-height: 90px;
+    padding-top: 10px;
+    border: none;
+}
+
+.deg {
+    position: relative;
+    margin: 2px;
+}
+
+.deg::after {
+    top: 0;
+    right: 2px;
+    width: 3px;
+    height: 3px;
+    border-width: 2px;
+    border-color: #fff;
+}
+
+.time {
+    margin-top: 2px;
+}
